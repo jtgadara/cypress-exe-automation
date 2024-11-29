@@ -1,0 +1,48 @@
+{
+    "validUser": {
+      "firstName": "Test001",
+      "lastName": "Test002",
+      "email" : "testincubyte@gmail.com", 
+      "password": "Test@123",
+      "confirmPassword": "Test@123"
+    },
+    "invalidEmailAddress": {
+      "firstName": "Test001",
+      "lastName": "Test002",
+      "email": "invalidemail.com",
+      "password": "Test@123",
+      "confirmPassword": "Test@123"
+    },
+    "password_lessThanMinimumLength": {
+      "password": "Test"
+    },
+    "password_NotHavingDigits": {
+      "password": "TestPassword"
+    },
+    "password_NotMatching": {
+      "firstName": "Test001",
+      "lastName": "Test002",
+      "email" : "testincubyte@gmail.com", 
+      "password": "Test@123",
+      "confirmPassword": "Test@12345"
+    },
+    "invalidFirstAndLastName": {
+      "firstName": "Test#1",
+      "lastName": "Test#2",
+      "email" : "testincubyte@gmail.com", 
+      "password": "Test@123",
+      "confirmPassword": "Test@123"
+    },
+    "spaceInPasswords": {
+      "firstName": "Test1",
+      "lastName": "Test2",
+      "email" : "testincubyte@gmail.com", 
+      "password": "   Test@123   ",
+      "confirmPassword": "   Test@123   "
+    },
+    "invalidUser":{
+      "email" : "testincubyteinvalid@gmail.com", 
+      "password": "Test@123"
+    }
+  }
+  
