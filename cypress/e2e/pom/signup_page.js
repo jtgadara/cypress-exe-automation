@@ -101,8 +101,8 @@ fillSignupWithAlreadyRegisteredEmail(){
   }
 
   logout() {
-      cy.xpath(this.locators.customerMenuToggle).click();
-      cy.xpath(this.locators.signOutLink).click();
+      cy.xpath(this.locators.customerMenuToggle).click({force: true});
+      cy.xpath(this.locators.signOutLink).click({force: true});
       cy.xpath(this.locators.createAccountVisibleCheck).should('be.visible');
   }
 

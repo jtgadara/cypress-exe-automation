@@ -17,7 +17,7 @@ When("user enters valid credential", () => {
 When("user clicks on Sign In after entering credentials", () => {
 loginPage.clickOnSignInAfterEnteringCredentials();
 });
-Then("user verify successfull login", () => {
+Then("user verify successful login", () => {
 loginPage.verifyLogin();
 });
 
