@@ -18,4 +18,4 @@ This is a sample framework which is designed to test signup functionality of htt
 - navigate to cypress/e2e/reports - it contains the report generated 
 
 ## TestCases
-- refer Incubyte - Testcases.xlsx
+- refer file "Incubyte - Testcases.xlsx"
