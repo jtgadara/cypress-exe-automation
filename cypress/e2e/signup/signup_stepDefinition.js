@@ -18,12 +18,12 @@ When("user enters all valid details and click on create an Account", () => {
   signupPage.submitForm();
 });
 
-When("user click on create an Account in form",  () => {
+When("user click on create an Account in form", () => {
   signupPage.submitForm();
 });
 
 Then("user is able to see Thank you message", () => {
-signupPage.verifySuccess();
+  signupPage.verifySuccess();
 });
 
 Then("user logout from application", () => {
@@ -46,44 +46,44 @@ When("user enters details with not matching password", () => {
   signupPage.fillSignupFormWithNotMatchingPassword()
 });
 
-When("user is able to see password not matching error",() => {
+When("user is able to see password not matching error", () => {
   signupPage.verifyPasswordNotMatchError()
 });
 
-When("user enters password less than minimum length",() => {
+When("user enters password less than minimum length", () => {
   signupPage.enterPasswordLessThanMinimumLength()
 });
 Then("user is able to see minimum length error in password", () => {
   signupPage.verifyMinimumPasswordLengthError()
 });
 
-When("user enters password without digits",() => {
+When("user enters password without digits", () => {
   signupPage.enterPasswordWithoutDigit()
 });
 Then("user is able to see error that password should have 3 classes", () => {
   signupPage.verifyPasswordErrorForHaving3classes()
 });
 
-When("user enters invalid firstnamd and lastname",() =>{
+When("user enters invalid firstnamd and lastname", () => {
   signupPage.fillSignupFormWithInvalidFirstAndLastName()
 })
 
-Then("user is able to see invalid firstname and lastname error",() =>{
+Then("user is able to see invalid firstname and lastname error", () => {
   signupPage.verifyInvalidFirstNameAndLastNameError()
 })
 
-When("user enters already registered email and other valid details",() =>{
+When("user enters already registered email and other valid details", () => {
   signupPage.fillSignupWithAlreadyRegisteredEmail()
 })
 
-Then("user is able to see already registered email error",() =>{
+Then("user is able to see already registered email error", () => {
   signupPage.verifyAlreadyRegisteredEmailError()
 })
 
-When("user enters password with leading and trailing space and other valid details",() =>{
+When("user enters password with leading and trailing space and other valid details", () => {
   signupPage.fillSignupWithLeadingAndtTrailingSpace()
-})  
+})
 
-Then("user is able to see error related to space in password",() =>{
+Then("user is able to see error related to space in password", () => {
   signupPage.verifyErrorInPasswordAboutSpace()
 })

@@ -15,13 +15,13 @@ When("user enters valid credential", () => {
   loginPage.loginWithValidCredential();
 });
 When("user clicks on Sign In after entering credentials", () => {
-loginPage.clickOnSignInAfterEnteringCredentials();
+  loginPage.clickOnSignInAfterEnteringCredentials();
 });
 Then("user verify successful login", () => {
-loginPage.verifyLogin();
+  loginPage.verifyLogin();
 });
 
-When("user enters invalid credential", () => { 
+When("user enters invalid credential", () => {
   loginPage.loginWithInvalidCredential();
 })
 Then("user verify error message for invalid login credential", () => {

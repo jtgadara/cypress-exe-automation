@@ -27,14 +27,14 @@ class LoginPage {
     verifyLogin() {
         cy.xpath(this.locators.signInLink).should('not.exist');
     }
-    loginWithInvalidCredential(){
+    loginWithInvalidCredential() {
         cy.fixture('usertestdata').then((data) => {
             const { email, password } = data.invalidUser;
             cy.xpath(this.locators.emailField).type(email);
             cy.xpath(this.locators.passwordField).type(password);
         });
     }
-    verifyErrorMessageInLogin(){
+    verifyErrorMessageInLogin() {
         cy.xpath(this.locators.verifyErrorMessageInLogin).should('not.exist');
     }
 }

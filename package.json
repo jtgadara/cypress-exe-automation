@@ -8,7 +8,7 @@
     "report:generate": "marge cypress/reports/report.json --reportDir cypress/reports --inline",
     "test:report": "rm -rf cypress/reports/* && npm run test:headless && npm run report:merge && npm run report:generate"
   },
-  "author": "",
+  "author": "jtgadara",
   "license": "ISC",
   "description": "",
   "dependencies": {

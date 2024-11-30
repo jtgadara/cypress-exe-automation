@@ -25,7 +25,7 @@ module.exports = defineConfig({
     screenshotsFolder: "cypress/screenshots", // Default folder for screenshots
     video: false, // Disable videos if not needed
     nonGlobalStepDefinitions: true,
-    stepDefinition:"**/*.js",
+    stepDefinition: "**/*.js",
     watchForFileChanges: false,
     chromeWebSecurity: false,
     reporter: 'cypress-mochawesome-reporter',
@@ -35,7 +35,7 @@ module.exports = defineConfig({
       html: false,
       json: true,
       embeddedScreenshots: true,
-      charts: true, 
+      charts: true,
     },
   },
 });
