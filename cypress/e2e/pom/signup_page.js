@@ -125,7 +125,7 @@ fillSignupWithAlreadyRegisteredEmail(){
   enterPasswordLessThanMinimumLength(){
     cy.fixture('usertestdata').then((data) => {
       const { password } = data.password_lessThanMinimumLength;
-      cy.get(this.locators.passwordField).type(password);
+      cy.get(this.locators.passwordField).type(`${password}{enter}`);
   });
   }
   verifyMinimumPasswordLengthError(){
@@ -134,7 +134,7 @@ fillSignupWithAlreadyRegisteredEmail(){
   enterPasswordWithoutDigit(){
     cy.fixture('usertestdata').then((data) => {
       const { password } = data.password_NotHavingDigits;
-      cy.get(this.locators.passwordField).type(password);
+      cy.get(this.locators.passwordField).type(`${password}{enter}`);
   });
   }
 
